@@ -133,22 +133,22 @@ layer_state_t layer_state_set_user(layer_state_t state) {
     switch (get_highest_layer(state)) {
     case _BASE:
         rgblight_sethsv_range(HSV_BLUE, 0, 2);
-        cocot_set_scroll_mode(false);
+        // cocot_set_scroll_mode(false);
         break;
     case _FN1:
         rgblight_sethsv_range(HSV_RED, 0, 2);
-        cocot_set_scroll_mode(true);
+        // cocot_set_scroll_mode(true);
         break;
     case _FN2:
         rgblight_sethsv_range(HSV_GREEN, 0, 2);
-        cocot_set_scroll_mode(true);
+        // cocot_set_scroll_mode(true);
         break;
     default:
         rgblight_sethsv_range( 0, 0, 0, 0, 2);
-        cocot_set_scroll_mode(false);
+        // cocot_set_scroll_mode(false);
         break;
     }
-    rgblight_set_effect_range( 2, 10);
+    // rgblight_set_effect_range( 2, 10);
       return state;
 };
 
